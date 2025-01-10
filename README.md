@@ -87,8 +87,8 @@
           mode http
           balance roundrobin
           option httpchk GET /healthz
-          server sftpgo1 172.20.104.58:8080 check
-          server sftpgo2 172.20.104.59:8080 check
+          server sftpgo1 <your-ip>:8080 check
+          server sftpgo2 <your-ip>:8080 check
 
       listen stats
           bind :8800
